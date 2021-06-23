@@ -1,7 +1,7 @@
 
 name: 'discursus_dw'
 version: '0.0.1'
-require-dbt-version: ">=0.19.0"
+require-dbt-version: "0.19.1"
 config-version: 2
 
 profile: discursus
@@ -18,17 +18,35 @@ clean-targets:
     - "target"
     - "dbt_modules"
 
+seeds:
+    discursus_dw:
+        +schema: seed
+
+        actor_types:
+            +column_types:
+                CODE: varchar(3)
+                LABEL: varchar
+
+        event_types:
+            +column_types:
+                CODE: varchar
+                LABEL: varchar
+
+        fips_country:
+            +column_types:
+                CODE: varchar(2)
+                LABEL: varchar
+
+
 models:
     discursus_dw:
         staging:
             materialized: view
             schema: staging
+
         integration:
             materialized: view
             schema: integration
+            
         warehouse:
             materialized: table
-        utils:
-            materialized: table
-            schema: logs
-            enabled: false

@@ -1,4 +1,19 @@
-[Read here for a thorough introduction to the discursus project](https://www.olivierdupuis.com/introducing-discursus-io/)
+# What is the discursus project
+The discursus project is an open source platform that mines, shapes and exposes the digital artifacts of protests, their discourses and the actors that influence social reforms.
+
+[For a full intro, read here](https://www.olivierdupuis.com/introducing-discursus-io/)
+
+
+# Current Status
+ERD:
+![ERD](images/discursus_core_erd.png "ERD")
+
+Stack:
+![Stack](images/discursus_core_stack.png "Stack")
+
+dbt DAG:
+![dbt DAG](images/discursus_core_dbt_dag.png "dbt DAG")
+
 
 
 # Environment
