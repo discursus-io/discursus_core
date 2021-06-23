@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: wh_events_fact
+    description: Table of events
+    columns:
+      - name: event_pk
+        description: >
+          Unique identifier for events
+        tests:
+          - unique
+          - not_null

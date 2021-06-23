@@ -1,4 +1,3 @@
-*.env
 .python-version
 target/
 dbt_modules/

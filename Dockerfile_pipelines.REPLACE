@@ -45,7 +45,7 @@ COPY .aws/ /opt/dagster/app/.aws/
 
 COPY miners/ /opt/dagster/app/miners/
 COPY dw/ /opt/dagster/app/dw/
-RUN (cd /opt/dagster/app/dw/; dbt deps --profiles-dir ./; dbt seed --full-refresh --profiles-dir ./)
+RUN (cd /opt/dagster/app/dw/; dbt deps)
 
 COPY orchestration/discursus_pipelines.py /opt/dagster/app
 COPY orchestration/configs /opt/dagster/app/configs
