@@ -80,7 +80,7 @@ Only thing left is to configure your instance:
 
 There are many ways you can contribute and help discursus core. Here a few ones:
 
-* Star this repo, subscribe to our [blog](https://blog.discursus.io/) and follow us on [Twitter](https://twitter.com/discursus_io).
+* Star this repo, subscribe to our [blog](https://blog.discursus.io/) and follow us on [LinkedIn](https://www.linkedin.com/company/76981202/admin/).
 * Fork this repo and run an instance yourself and please 🙏 help us out with documentation.
 * Take ownership of some of the [issues we already documented](https://github.com/discursus-io/discursus_core/issues), and send over some PRs
 * Create issues every time you feel something is missing or goes wrong.
